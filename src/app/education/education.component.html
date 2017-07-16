@@ -1,0 +1,8 @@
+<div class="education" *ngIf="person">
+  <div *ngFor="let item of person.edu" class="single-education">
+    <p class="single-education-item">{{item.time}}</p>
+    <p class="single-education-item">{{item.school}}</p>
+    <p class="single-education-item">{{item.level}}</p>
+    <p class="single-education-item">{{item.major}}</p>
+  </div>
+</div>

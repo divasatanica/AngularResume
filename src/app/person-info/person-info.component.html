@@ -1,0 +1,7 @@
+<div class="base-info" *ngIf="person">
+  <p class="four-info">{{ person.name }}</p>
+  <p class="four-info">{{ person.tele }}</p>
+  <p class="four-info">{{ person.age }}</p>
+  <p class="four-info">{{ person.address }}</p>
+  <img [src]="person.avatar">
+</div>

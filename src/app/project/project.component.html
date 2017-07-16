@@ -1,0 +1,10 @@
+<div *ngIf="person" class="project">
+  <div *ngFor="let item of person.proj" class="project-item" >
+    <p class="project-item-word">{{item.time}}</p>
+    <p class="project-item-word">{{item.name}}</p>
+    <p class="project-item-word">{{item.job}}</p>
+    <div *ngFor="let word of item.process">
+      <p>{{word}}</p>
+    </div>
+  </div>
+</div>
