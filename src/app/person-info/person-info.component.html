@@ -1,7 +1,11 @@
-<div class="base-info" *ngIf="person">
-  <p class="four-info">{{ person.name }}</p>
-  <p class="four-info">{{ person.tele }}</p>
-  <p class="four-info">{{ person.age }}</p>
-  <p class="four-info">{{ person.address }}</p>
-  <img [src]="person.avatar">
+<div class="base-container">  
+  <div class="base-avatar" *ngIf="person">
+    <img [src]="person.avatar">
+  </div>
+  <div class="base-info" *ngIf="person">
+    <p class="four-info"><i class="fa fa-id-card-o"></i>姓名：{{ person.name }}</p>
+    <p class="four-info"><i class="fa fa-volume-control-phone"></i>手机：{{ person.tele }}</p>
+    <p class="four-info"><i class="fa fa-calendar"></i>年龄：{{ person.age }}</p>
+    <p class="four-info"><i class="fa fa-address-card"></i>地址：{{ person.address }}</p>
+  </div>
 </div>
